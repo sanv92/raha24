@@ -1,0 +1,15 @@
+.slider {
+	background: #17c63f url('../images/bg_slider.gif') repeat-x;
+}
+
+form[name=login] fieldset {
+	background: #fff url('../images/bg_login.gif') repeat-x;
+}
+
+form[name=login] fieldset .clogin {
+	background: #fff url('../images/bg_login.gif') repeat-x;
+}
+
+.clear, form[name=login], #username, #password, form[name=login] fieldset legend, #submit input, form[name=login] fieldset {
+	behavior: url(main/css/PIE.php);
+}

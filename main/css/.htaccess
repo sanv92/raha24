@@ -1,0 +1,29 @@
+<Files "style.css">
+    Order Deny,Allow
+    Allow from all
+</Files>
+
+<Files "ie_style.css">
+    Order Deny,Allow
+    Allow from all
+</Files>
+
+<Files "fd_del_my_friend.php">
+    Order Deny,Allow
+    Allow from all
+</Files>
+
+<Files "ie_7.css">
+    Order Deny,Allow
+    Allow from all
+</Files>
+
+<Files "PIE.php">
+    Order Deny,Allow
+    Allow from all
+</Files>
+
+<Files "PIE.htc">
+    Order Deny,Allow
+    Allow from all
+</Files>

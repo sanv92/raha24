@@ -1,0 +1,351 @@
+article, nav, footer, section { display: block; }
+* { font-style: normal; margin: 0; padding: 0; font-family: Arial, Helvetica, Tahoma, sans-serif; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, address, code, em, img, ins, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+body { font-size: .75em; margin: 0 auto; background: url('../images/bg.gif'); }
+ul { list-style: none;}
+table { border-collapse: collapse; border-spacing: 0; }
+input, button { margin: 0; padding: 0; outline: none; }
+
+a { color: #ff9300; text-decoration: none; outline: none;}
+a:hover { color: #ff6600; }
+article p { padding-bottom: 1em; }
+body, header[role=banner], .slider, footer[role=contentinfo] {
+	max-width: 2000px;
+	min-width: 996px;
+}
+
+header[role=banner] h1 a {
+	display: block;
+	position: absolute;
+	height: 160px;
+	left: 50%;
+	margin-left: -405px;
+	z-index: 3;
+}
+
+header[role=banner] div {
+	overflow: hidden;
+	height: 117px;
+	position: relative;
+}
+
+header[role=banner] {
+	height: 114px;
+	display: block;
+	left: 0;
+	width: 100%;
+	background: #fff;
+	border-bottom: 3px solid #ccc;
+	position: relative;
+	z-index: 2;
+}
+
+header[role=banner] h1 a img {
+	position: relative;
+	top: 17px;
+}
+
+
+header[role=banner] div, header[role=banner] + section div, section[role=main] {
+	margin: auto;
+	width: 850px;
+}
+
+nav {
+	position: absolute;
+	right: 0;
+	top: 0;
+	text-transform: uppercase;
+	height: 117px;
+}
+
+nav ul {
+	top: 5.167em;
+	position: relative;
+}
+
+nav ul li {
+	float: left;
+	margin-right: 3.5em;
+}
+
+nav ul li a {
+	color: #333;
+	font-size: 2em;
+}
+
+nav ul li a:hover {
+	color: #828282;
+}
+
+.slider {
+	height: 392px;
+	position: relative;
+	background: #108d2d;
+	background: -moz-linear-gradient(top,  #108d2d 0%, #17c63f 5%, #17c63f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#108d2d), color-stop(5%,#17c63f), color-stop(100%,#17c63f));
+	background: -webkit-linear-gradient(top,  #108d2d 0%,#17c63f 5%,#17c63f 100%);
+	background: -o-linear-gradient(top,  #108d2d 0%,#17c63f 5%,#17c63f 100%);
+	background: -ms-linear-gradient(top,  #108d2d 0%,#17c63f 5%,#17c63f 100%);
+	background: linear-gradient(to bottom,  #108d2d 0%,#17c63f 5%,#17c63f 100%);
+	overflow: hidden;
+}
+
+header[role=banner] + section div {
+	height: 392px;
+	position: relative;
+	overflow: hidden;
+}
+
+section[role=main] {
+	margin: auto;
+	height: 100%;
+	padding: 24px;
+	overflow: hidden;
+}
+
+section[role=main] ul {
+	position: relative;
+	display: inline-block;
+}
+
+section[role=main] ul li {
+	width: 256px;
+	float: left;
+	cursor: pointer;
+}
+
+section[role=main] ul li div {
+	background: #d6d6d6;
+}
+
+section[role=main] ul li:first-child { margin-right: 41px; }
+section[role=main] ul li:first-child + li {
+	margin-right: 41px;
+}
+section[role=main] ul li:first-child + li + li { }
+
+section[role=main] ul li:first-child div, section[role=main] ul li:first-child + li div, section[role=main] ul li:first-child + li + li div {
+	position: absolute;
+	top: 0;
+	background: #d6d6d6;
+	width: 256px;
+	height: 100%;
+}
+
+section[role=main] ul li:first-child div { left: 0; }
+section[role=main] ul li:first-child + li div { left: 297px; }
+section[role=main] ul li:first-child + li + li div { right: 0; }
+
+section[role=main] ul li div:hover, section[role=main] ul li:hover > p + div, section[role=main] ul li:hover > h3 + p + div, .shadow {
+	-moz-box-shadow: 0 0 10px 1px #929292;
+	-webkit-box-shadow: 0 0 10px 1px #929292;
+	box-shadow: 0 0 10px 1px #929292;
+}
+
+section[role=main] ul li + li + li {
+	margin: auto;
+}
+
+section[role=main] ul li h3 {
+	background: #afafaf;
+	text-align: center;
+	padding: 0.833em;
+	font-size: 2em;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 1;
+}
+
+section[role=main] ul li p {
+	font-weight: bold;
+	padding: 28px;
+	line-height: 1.5em;
+	font-size: 1.1em;
+	position: relative;
+	z-index: 1;
+}
+
+section[role=main] ul li h3, section[role=main] ul li p {
+	color: #000;
+}
+
+footer[role=contentinfo] {
+	background: #575757;
+	color: #fff;
+	margin: auto;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 32px;
+}
+
+footer[role=contentinfo] > div:first-child {
+	margin: auto;
+	width: 850px;
+	padding: 32px 0;
+	height: 100%;
+}
+
+footer[role=contentinfo] > div:first-child > div:first-child {
+	float: left;
+	width: 230px;
+	font-size: 1.167em;
+}
+
+footer[role=contentinfo] > div:first-child > div + div {
+	float: right;
+}
+
+footer[role=contentinfo] > div:first-child > div + div > div {
+	height: 230px;
+	overflow: hidden;
+}
+
+footer[role=contentinfo] > div:first-child iframe {
+	width: 570px;
+	height: 270px;
+}
+
+
+.clear {
+	clear: both;
+}
+
+.login {
+	width: 100%;
+	margin: auto;
+	position: absolute;
+	top: 116px;
+	z-index: 1;
+	height: 180px;
+	margin-top: -135px;
+}
+
+.login > div:first-child {
+	margin: auto;
+	position: relative;
+	display: block;
+	width: 850px;
+	height: 200px;
+}
+
+form[name=login] {
+	width: 248px;
+	border-top: none;
+	position: absolute;
+	z-index: 1;
+	right: 0;
+}
+
+form[name=login] label {
+	position: absolute;
+	left: -9999px;
+}
+
+#submit {
+	position: relative;
+	left: auto;
+}
+
+#username, #password {
+	border: 3px solid #aaa;
+	padding: 5px 7px;
+	margin-bottom: 6px;
+	width: 230px;
+}
+
+form[name=login] fieldset {
+	height: 110px;
+}
+
+form[name=login] fieldset legend {
+	position: absolute;
+	bottom: -40px;
+	right: 22px;
+	background: #fff;
+	cursor: pointer;
+	border: 3px solid #aaa;
+	border-top: none;
+	border-radius: 0 0 12px 12px;
+	-moz-border-radius: 0 0 12px 12px;
+	-webkit-border-radius: 0 0 12px 12px;
+	-o-border-radius: 0 0 12px 12px;
+	-khtml-border-radius: 0 0 12px 12px;
+	padding: 12px 30px;
+	color: #828282;
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+
+
+form[name=login] fieldset .clogin {
+	background: #bdbdbd;
+	background: -moz-linear-gradient(top,  #bdbdbd 0%, #d7d7d7 9%, #fefefe 21%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(9%,#d7d7d7), color-stop(21%,#fefefe), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+	background: -o-linear-gradient(top,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+	background: -ms-linear-gradient(top,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+	background: linear-gradient(to bottom,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+}
+
+
+form[name=login] fieldset {
+	padding: 10px 12px;
+	border: 3px solid #aaa;
+	border-radius: 0 0 12px 12px;
+	-moz-border-radius: 0 0 12px 12px;
+	-webkit-border-radius: 0 0 12px 12px;
+	-o-border-radius: 0 0 12px 12px;
+	-khtml-border-radius: 0 0 12px 12px;
+
+	background: #bdbdbd;
+	background: -moz-linear-gradient(top,  #bdbdbd 0%, #d7d7d7 9%, #fefefe 21%, #ffffff 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bdbdbd), color-stop(9%,#d7d7d7), color-stop(21%,#fefefe), color-stop(100%,#ffffff));
+	background: -webkit-linear-gradient(top,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+	background: -o-linear-gradient(top,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+	background: -ms-linear-gradient(top,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+	background: linear-gradient(to bottom,  #bdbdbd 0%,#d7d7d7 9%,#fefefe 21%,#ffffff 100%);
+	width: 100%;
+}
+
+#submit {
+	float: right;
+}
+
+#submit input {
+	background: #17c63f;
+	color: #fff;
+	text-align: center;
+	border: none;
+	width: 180px;
+	padding: 8px 0;
+	cursor: pointer;
+}
+
+#submit input:hover {
+	background: #28d950;
+}
+
+#username, #password, #submit input {
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-o-border-radius: 12px;
+	-khtml-border-radius: 12px;
+}
+
+.logincl {
+	margin-top: 0;
+}
+
+.slider div { position: relative; margin: auto; }
+.slider ul { position: relative; left: -850px; width: 9999px; top: 50%; margin-top: -100px; }
+.slider ul li { float: left; width: 850px; }
+.slider ul li h2 { font-size: 3.333em; color: #fff; }
+.slider ul li p { color: #fff; width: 800px; line-height: 28px; padding-top: 6px; font-size: 2em; }
+
+#cleft { background: #17c63f url('../images/arrowlr.gif') no-repeat; width: 48px; height: 85px; cursor: pointer; position: absolute; left: 50%; top: 50%; margin-left: -495px; text-indent: -9999px; margin-top: -24px; }
+#cright { background: #17c63f url('../images/arrowlr.gif') no-repeat 0 -85px; width: 48px; height: 85px; cursor: pointer; position: absolute; top: 50%; text-indent: -9999px; margin-top: -24px; right: 50%; margin-right: -495px; }
+#cleft:hover, #cright:hover { opacity:0.9; filter:alpha(opacity=90); -moz-opacity:0.9; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90); -moz-opacity: 0.9; -khtml-opacity: 0.9; }
